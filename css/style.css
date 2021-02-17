@@ -131,6 +131,7 @@ section {
 /* 案内 */
 .bottom {
   display: flex;
+  height: 475px;
 }
 .bottom a {
   display: block;
