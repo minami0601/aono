@@ -1,0 +1,123 @@
+img {
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: #082b48;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,li {
+  line-height: 1.2;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+}
+
+a:hover {
+  opacity: .5;
+  transition: .3s;
+}
+header {
+  padding: 30px 0;
+}
+.header-logo {
+  width: 140px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.nav-item {
+  padding: 0 30px;
+  font-size: 18px;
+}
+.visual p {
+  text-align: center;
+  font-size: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bg-img {
+  height: 640px;
+  position: relative;
+  background-image: url('../img/main.png');
+  background-size: cover;
+  background-position: center;
+}
+/* section */
+section {
+  padding: 90px 0;
+}
+
+.sec-title {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 70px;
+}
+
+/* お知らせ */
+
+.news-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.info-item {
+  display: inline-block;
+  border-bottom: 1px solid #000;
+  width: 700px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.info-item .date,
+.info-item .text {
+  margin-right: 25px;
+  font-size: 18px;
+}
+.info {
+  display: inline-block;
+  padding: 5px 8px;
+  border: 1px solid #000000;
+  font-size: 11px;
+  margin-right: 25px;
+
+}
+
+/* 施設事例 */
+.wrapper {
+  display: flex;
+}
+.about-item {
+  width: 50%;
+  text-align: center;
+}
+.about-item img {
+  width: 80%;
+}
+.about-title {
+  font-size: 24px;
+  padding: 20px 0;
+}
+.about-item .area,
+.about-item a {
+  display: block;
+  border-bottom: 1px solid #000;
+  margin: 20px 50px;
+  padding-bottom: 20px;
+}
+
