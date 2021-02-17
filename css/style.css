@@ -101,23 +101,66 @@ section {
 /* 施設事例 */
 .wrapper {
   display: flex;
+  justify-content: space-around;
 }
 .about-item {
-  width: 50%;
+  width: 40%;
   text-align: center;
-}
-.about-item img {
-  width: 80%;
 }
 .about-title {
   font-size: 24px;
-  padding: 20px 0;
+  padding-top: 20px;
 }
 .about-item .area,
 .about-item a {
-  display: block;
-  border-bottom: 1px solid #000;
   margin: 20px 50px;
-  padding-bottom: 20px;
+}
+.about-item .more {
+  width: 300px;
+}
+
+.about-more a {
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin: 70px auto 0 auto;
+  padding: 10px 0;
+  border: 1px solid #000;
+  font-size: 20px;
+}
+/* 案内 */
+.bottom {
+  display: flex;
+}
+/* footer */
+footer {
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+.footer-logo {
+  width: 100px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-nav {
+  display: flex;
+}
+.footer-nav a {
+  color: #fff;
+}
+.footer-nav .nav-item {
+  padding: 0 30px;
+  font-size: 18px;
+}
+.corporation {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 20px;
 }
 
