@@ -40,16 +40,25 @@ header {
   display: flex;
 }
 .nav-item {
-  padding: 0 30px;
+  padding-left: 60px;
   font-size: 18px;
 }
-.visual p {
+.hamburger {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+.visual {
   text-align: center;
-  font-size: 48px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+}
+.visual p {
+  text-align: center;
+  font-size: 48px;
 }
 .bg-img {
   height: 640px;
@@ -61,6 +70,7 @@ header {
 /* section */
 section {
   padding: 90px 0;
+  width: 100%;
 }
 
 .sec-title {
@@ -70,7 +80,6 @@ section {
 }
 
 /* お知らせ */
-
 .news-info {
   display: flex;
   flex-direction: column;
@@ -131,7 +140,8 @@ section {
 /* 案内 */
 .bottom {
   display: flex;
-  height: 475px;
+  margin-bottom: -4px;
+  width: 100%;
 }
 .bottom a {
   display: block;
@@ -167,4 +177,96 @@ footer {
   text-align: center;
   padding-top: 20px;
 }
+@media only screen and (max-width: 960px) {
+  .hamburger {
+    display: block;
+  }
+  .header-logo {
+    width: 100px;
+  }
+  
+  /* section */
+  section {
+    padding: 50px 0;
+    width: 100%;
+  }
 
+  .sec-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .visual p {
+    font-size: 30px;
+  }
+  
+  .head nav {
+    display: none;
+  }
+  /* お知らせ */
+  .info-item {
+    display: block;
+    width: 100%;
+  }
+  
+  .info-item .date {
+    margin-right: 25px;
+    font-size: 14px;
+  }
+  .info-item .text {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  /* 施設事例 */
+  .wrapper {
+    display: block;
+  }
+  .about-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about-title {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+  .about-item .area,
+  .about-item a {
+    margin: 20px 50px;
+  }
+  .about-item .more {
+    width: 200px;
+  }
+
+  .about-more a {
+    margin: 50px auto 0 auto;
+  }
+  /* 案内 */
+  .bottom {
+    display: block;
+  }
+  .bottom a {
+    display: block;
+    max-width: 100%;
+    margin-bottom: -4px;
+
+  }
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  
+  .footer-nav {
+    display: block;
+  }
+  .footer-nav .nav-item {
+    margin: 20px 0;
+  }
+  
+
+
+
+
+}
